@@ -2,8 +2,7 @@ $(document).ready(function() {
   var _liNum = $(".topSlide ul li").length;
   _curNum = 0;
   var _slideTimerID;
-  window_width = $(window).width(); //global
-  console.log(window_width);
+  slide_width = $('#topSlide').width(); //global
   xStartTimer();
 
 
@@ -29,7 +28,7 @@ $(document).ready(function() {
   }
 
   function slide_anime() {
-    var posX = -window_width * _curNum;
+    var posX = -slide_width * _curNum;
     // console.log(posX);
     xStartTimer();
     $(".topslider").stop().animate({
@@ -42,6 +41,6 @@ $(document).ready(function() {
 
 
 $(window).on('resize', function() {
-  window_width = $(window).width(); //global
-  console.log(window_width);
+  slide_width = $(window).width(); //global
+  console.log(slide_width);
 });

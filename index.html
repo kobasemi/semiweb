@@ -7,9 +7,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>小林孝史ゼミ</title>
   <style>
+  @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Merriweather|Nixie+One');
+  @import url('css/icomoon.css');
     * {
       -webkit-margin-before: 0em;
       -webkit-margin-after: 0em;
+    }
+    h1,h2,h3,h4{
+      margin :0;
     }
 
     a {
@@ -17,14 +22,20 @@
       color: #000;
     }
 
+
+
     html,
     body {
       width: 100%;
       padding: 0;
       margin: 0;
       line-height: 1.6em;
-      /*background-color: #aaa;*/
+      font-family:'Didact Gothic', 'Avenir', "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, 'Roboto', "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", 'Meiryo', "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      letter-spacing: 1px;
+
     }
+
+
 
     ul {
       list-style: none;
@@ -38,6 +49,8 @@
 
       text-align: center;
       font-size: 2rem;
+      font-family: 'Merriweather', serif;
+      letter-spacing: 10px;
     }
     /*title-border*/
 
@@ -64,11 +77,19 @@
       display: block;
       text-align: center;
     }
-
+    .kobasemi h1{
+      font-size: 4vw;
+      line-height: 8vh;
+      font-family: 'Nixie One', cursive;
+      margin: 2vh auto 1.5vh auto;
+      letter-spacing: 5px;
+      font-feature-settings : "palt";
+    }
+/*
     .kobasemi img {
       max-width: 90%;
       max-height: 8vh;
-    }
+    }*/
 
     nav ul {
       text-align: center;
@@ -82,12 +103,13 @@
       text-align: center;
       display: inline-block;
       margin: 1rem 4%;
+      letter-spacing: 4px;
     }
 
     .topSlide {
       width: 90%;
       height: 70vh;
-      margin: 1rem auto;
+      margin: 1vh auto;
       overflow: hidden;
     }
 
@@ -129,6 +151,9 @@
       position: absolute;
       bottom: 3rem;
       right: 0;
+    }
+    .topslider .description h3{
+      letter-spacing: 3px;
     }
 
     .topslider .description p {
@@ -212,6 +237,7 @@
     #topicItem ul li ul li:last-child {
       width: 55%;
       padding-left: 2%;
+      overflow: hidden;
     }
 
     #topic img {
@@ -230,6 +256,7 @@
     #topic h3 {
       width: 100%;
       font-size: 1.2rem;
+      letter-spacing: 2px;
     }
 
     #topic p {
@@ -268,7 +295,7 @@
     #news>img {
       position: absolute;
       object-fit: cover;
-      opacity: 0.5;
+      opacity: 0.2;
       z-index: -100;
       top: 50%;
       left: 50%;
@@ -276,6 +303,11 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       width: 100%;
+      -webkit-filter: blur(2px);
+      -moz-filter: blur(2px);
+      -o-filter: blur(2px);
+      -ms-filter: blur(2px);
+      filter: blur(2px);
     }
 
     #news h1 {
@@ -283,8 +315,8 @@
     }
 
     #newsBox {
-      background-color: rgba(255, 255, 255, 0.3);
-      border: solid 1px #000;
+      background-color: rgba(255, 255, 255, 0.4);
+      /*border: solid 1px #000;*/
       width: 80%;
       height: 20vh;
       margin: 0 auto;
@@ -331,7 +363,7 @@
 
     #footer-logo img {
       width: 5vw;
-      margin: 3vh 5vw;
+      margin: 3vh 5vw 1vh 5vw;
     }
 
 
@@ -351,6 +383,7 @@
     #sitemap>ul>li{
       display: inline-block;
       margin:1rem 2rem;
+      letter-spacing: 2px;
     }
     #sitemap li{
       line-height: 1.8rem;
@@ -368,7 +401,7 @@
       -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
-      bottom:1rem;
+      bottom:0.3rem;
     }
 
   </style>
@@ -378,7 +411,8 @@
 <body>
   <header>
     <article class="kobasemi">
-      <img src="img/title.png" alt="title">
+      <!-- <img src="img/title.png" alt="title"> -->
+      <h1>Kansai University Kobayashi Lab.</h1>
     </article>
 
     <nav class="title-border">
@@ -604,7 +638,7 @@
         </li>
       </ul>
     </article>
-    <small>© 2004-2017 Kasai University Kobayashi Lab.</small>
+    <small>© 2004-2017 Kansai University Kobayashi Lab.</small>
   </footer>
   <!-- <footer></footer> -->
   <script src="http://code.jquery.com/jquery-latest.js"></script>
