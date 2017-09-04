@@ -490,6 +490,35 @@ margin-bottom: 1rem;
 margin-top: 1rem;
 }
 
+
+/*
+    office hour
+                */
+#messageWrap{
+  width: 100%;
+  padding: 7vh 0;
+  position: relative;
+  margin: 8vh auto 20vh auto;
+}
+
+#messageWrap>img {
+  position: relative;
+  opacity: 0.6;
+  z-index: -100;
+  width: 55%;
+  display: block;
+  margin:0 auto;
+  transform: translate(-20%,0);
+}
+
+#messageWrap .message {
+  position: absolute;
+  width: 55%;
+  right: 20%;
+  bottom : -2vh;
+  transform: translate(20%,0);
+}
+
 #memlist{
   margin: 10em auto;
   text-align: center;
@@ -512,4 +541,64 @@ margin-top: 1rem;
   font-size: 1.3em;
   font-weight: 500;
   text-align: right;
+}
+
+#dateList{
+  text-align: center;
+}
+ul#dateList>li>ul>li{
+  display: inline-block;
+  width: 8rem;
+  line-height: 2em;
+}
+ul#dateList>li:first-child{
+  font-size: 1.2em;
+  font-weight: 700;
+line-height: 3em;
+}
+
+ul#dateList>li>ul>li{
+  display: inline-block;
+}
+.pdfWrap{
+  margin: 8vh auto;
+  text-align: center;
+}
+#office_hourDocument{
+  width:80vw;
+  height: 60vw;
+}
+
+#calender{
+  text-align: center;
+  margin: 10vh auto;
+}
+#annual h2, #calender h2{
+  margin: 1em 13%;
+  text-align: left;
+}
+#calender iframe{
+  border-width:0;
+  width:80%;
+  height: 80vh;
+}
+
+#annual{
+  margin: 15vh auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+#annual>ul>li:first-child{
+  font-weight: 700;
+  font-size: 1.3em;
+}
+#annual>ul>li>ul>li:first-child{
+  line-height: 4em;
+  width: 8%;
+}
+#annual>ul>li>ul>li{
+  display: inline-block;
+  width:30%;
+  vertical-align: middle;
 }

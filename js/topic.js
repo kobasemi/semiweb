@@ -1,10 +1,43 @@
 $(document).ready(function() {
-  _topicLiNum = Math.floor(($("#topicUl > li").length - 1) / 5);
-  _topicCurNum = 0;
-  // window_height = $(window).height(); //global
-  // topic_wrap_height = window_height * 0.77;
-  topic_wrap_height = $("#topicUl").innerHeight();
-  controlBtn();
+
+  // スライドの読み込み
+  $.ajax({
+      url: 'topic.xml',
+      dataType: 'xml'
+    })
+    .then(function(data) {
+      var topicContents = '<ul id="topicUl">';
+      $('topic topicItem', data).each(function() {
+        var thisItem = $(this);
+        var ref = thisItem.children('ref').text();
+        var img = thisItem.children('img').text();
+        var title = thisItem.children('title').text();
+        var description = thisItem.children('description').text();
+
+        topicContents += `
+            <li>
+              <a href="${ref}">
+                <ul>
+                  <li><img src="${img}" alt=""></li>
+                  <li>
+                    <h3>${title}</h3>
+                    <p>${description}</p>
+                  </li>
+                </ul>
+              </a>
+            </li>`;
+      });
+      topicContents += "</ul>";
+      console.log(topicContents);
+      $("#topicItem").append(topicContents);
+
+      _topicLiNum = Math.floor(($("#topicUl > li").length - 1) / 4); //非同期処理だからこれがうまく取得できない
+      _topicCurNum = 0;
+      // window_height = $(window).height(); //global
+      // topic_wrap_height = window_height * 0.77;
+      topic_wrap_height = $("#topicUl").innerHeight();
+      controlBtn();
+    });
 });
 
 $(document).on('click', "#ue", function() {
