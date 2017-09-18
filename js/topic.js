@@ -33,9 +33,10 @@ $(document).ready(function() {
 
       _topicLiNum = Math.floor(($("#topicUl > li").length - 1) / 4); //非同期処理だからこれがうまく取得できない
       _topicCurNum = 0;
-      // window_height = $(window).height(); //global
-      // topic_wrap_height = window_height * 0.77;
-      topic_wrap_height = $("#topicUl").innerHeight();
+      // li 1個 + margin 1個分の高さ　* 個数　がアニメーションすべき高さ
+      var topic_height_inner = $("#topicUl li").innerHeight();
+      var topic_height_margin = ($("#topicUl li").outerHeight(true) - topic_height_inner) / 2;
+      topic_wrap_height = (topic_height_inner + topic_height_margin) * 4;
       controlBtn();
     });
 });
