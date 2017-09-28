@@ -1,0 +1,132 @@
+
+.PC{
+  display: none !important;
+}
+
+h1{
+    margin: 5vh auto 5vh auto;
+}
+.kobasemi {
+  margin: 0 auto;
+}
+
+.kobasemi h1 {
+  font-size: 7.4vw;
+  margin: 0.5vh auto;
+  line-height: 10vh;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topIcon{
+  width:10vw;
+  margin : auto 3vw;
+  vertical-align: middle;
+}
+
+.topslider li a {
+  width: calc( 100% - 3rem);
+}
+
+
+.topSlide {
+  height: 72vh;
+}
+
+.topslider .description {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+}
+#spNav{
+  height:8vh;
+  width:95%;
+  margin: auto;
+}
+#spNav ul{
+  width: 100%;
+}
+#spNav li{
+  width:4rem;
+  margin: 2vh calc( 11vw - 5vh );
+  letter-spacing: 0;
+  line-height: 1rem;
+}
+#spNav li div{
+  display: inline-block;
+  text-align: center;
+  color: #777;
+}
+#spNav a{
+  display: block;
+}
+
+.navIcon{
+  font-size: 6vh;
+}
+.navDes{
+  font-size: 0.1vh;
+  font-feature-settings: "palt";
+}
+
+
+#topicBtn{
+  font-size: 8vh;
+  margin:2vh auto;
+}
+
+
+#news{
+  margin:auto;
+  padding:0;
+}
+
+.bgImgBox>img {
+  height: 100%;
+}
+
+#newsBox {
+  width: 90%;
+  height: 20vh;
+  padding: 0.5rem;
+}
+
+#newsBox ul {
+  width: 90%;
+  height: 20vh;
+}
+
+#newsBox li {
+  line-height: 2rem;
+  height: 2rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  min-height: auto;
+}
+
+#sitemap>ul{
+  margin:2em auto;
+  text-align: center;
+}
+#sitemap>ul>li{
+letter-spacing: 0px;
+text-align: left;
+width: 15em;
+margin:0.5em auto;
+  /*display: block;;*/
+}
+
+#footer-logo img {
+  width: 10vw;
+  margin: 1vh 5vw;
+}
+
+footer small{
+  position: static;
+  -webkit-transform: none;
+  transform: none;
+}
