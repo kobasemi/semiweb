@@ -66,6 +66,10 @@ header {
   height: 55vh;
 }
 
+.topicHeader{
+  height:20vh;
+}
+
 .kobasemi {
   margin: 0 auto;
   margin-top: 2vh;
@@ -303,7 +307,7 @@ ul.topslider {
 .bgImgBox>img {
   position: absolute;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: -100;
   top: 50%;
   left: 50%;
@@ -418,6 +422,44 @@ footer small {
 
 /*
 
+    topic
+              */
+
+.topicWrap{
+  width:90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.topicDate{
+  margin: 1rem 0;
+}
+.topicWrap h1{
+  margin: 1rem 0;
+  line-height: 1.5em;
+}
+.topicImg{
+  width:90%;
+  margin: 0 auto;
+  height: 50vh;
+  overflow: hidden;
+}
+.topicImg img{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.topicWrap p{
+  width:90%;
+  margin: 2rem auto;
+  display: block;
+}
+
+/*
+
         about
                 */
 
@@ -501,11 +543,45 @@ footer small {
   margin-top: 1rem;
 }
 
+#thema{
+  width: 80%;
+  margin: 0 auto;
+}
+#thema>ul>li>ul>li{
+font-size: 1.1em;
+line-height: 2em;
+}
+#thema>ul>li>ul>li:first-child{
+margin-top: 0.5em;
+font-size: 1.4em;
+font-weight: 700;
+line-height: 2.4em;
+}
 /*
     office hour
                 */
 
+
 #messageWrap {
+  width: 100%;
+  padding: 0;
+  margin: 8vh auto 8vh auto;
+}
+
+
+#messageWrap>img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+#messageWrap .message {
+  position: static;
+  width: 80%;
+  margin: 3em auto;
+}
+
+/*#messageWrap {
   width: 100%;
   padding: 7vh 0;
   position: relative;
@@ -528,7 +604,7 @@ footer small {
   right: 20%;
   bottom: -2vh;
   transform: translate(20%, 0);
-}
+}*/
 
 #memlist {
   margin: 10em auto;
