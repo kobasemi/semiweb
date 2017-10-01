@@ -474,6 +474,7 @@ footer small {
 
 #teacher>ul>li img {
   height: 60vh;
+  max-height: 20em;
 }
 
 #teacher>ul>li>ul>li>ul>li {
@@ -571,10 +572,6 @@ ul#dateList>li:first-child {
   font-size: 1.2em;
   font-weight: 700;
   line-height: 3em;
-}
-
-ul#dateList>li>ul>li {
-  display: inline-block;
 }
 
 .pdfWrap {

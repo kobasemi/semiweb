@@ -6,6 +6,11 @@
 h1{
     margin: 5vh auto 5vh auto;
 }
+
+.otherHeader {
+  height: 65vh;
+}
+
 .kobasemi {
   margin: 0 auto;
 }
@@ -32,6 +37,11 @@ h1{
 .topSlide {
   height: 72vh;
 }
+
+.otherSlide {
+  height: 40vh;
+}
+
 
 .topslider .description {
   position: absolute;
@@ -129,4 +139,39 @@ footer small{
   position: static;
   -webkit-transform: none;
   transform: none;
+}
+
+
+/*
+    office hour
+                */
+
+#messageWrap {
+  width: 100%;
+  padding: 0;
+  position: static;
+  margin: 8vh auto 8vh auto;
+}
+
+
+#messageWrap>img {
+  /*position: relative;*/
+  opacity: 1;
+  width: 80%;
+  transform: translate(0, 0);
+}
+
+#messageWrap .message {
+  position: static;
+  width: 80%;
+  margin: 3em auto;
+  transform: translate(0, 0);
+}
+
+
+ul#dateList>li>ul>li:first-child {
+  width: 8rem;
+}
+ul#dateList>li>ul>li {
+  width: 6rem;
 }
