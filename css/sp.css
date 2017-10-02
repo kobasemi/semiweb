@@ -31,7 +31,7 @@ h1{
 }
 
 .topslider li a {
-  width: calc( 100% - 3rem);
+  /*width: calc( 100% - 3rem);*/
 }
 
 
@@ -46,8 +46,11 @@ h1{
 
 .topslider .description {
   position: absolute;
-  bottom: 2rem;
-  right: 0;
+
+  bottom: 1rem;
+  right: 1rem;
+  /*bottom: 2rem;
+  right: 0;*/
 }
 #spNav{
   height:10vh;
