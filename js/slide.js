@@ -71,4 +71,10 @@ $(document).ready(function() {
 $(window).on('resize', function() {
   slide_width = $(window).width(); //global
   console.log(slide_width);
+  var posX = -slide_width * _curNum;
+  $(".topslider").stop().animate({
+    marginLeft: posX + 'px'
+  }, '0', 'easeOutQuart');
+    return false;
+
 });
