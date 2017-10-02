@@ -5,6 +5,7 @@
 
 h1{
     margin: 5vh auto 5vh auto;
+    line-height: 1.5em;
 }
 
 .otherHeader {
@@ -63,7 +64,7 @@ h1{
   line-height: 1rem;
 }
 #spNav li div{
-  display: inline-block;
+  margin:0  auto;
   text-align: center;
   color: #777;
 }
@@ -153,6 +154,13 @@ footer small{
   width:80%;
   height: 20vh;
 }
+
+
+/*about*/
+#teacher>ul>li>ul>li>ul>li:first-child {
+  text-align: center;
+}
+
 /*
     office hour
                 */
