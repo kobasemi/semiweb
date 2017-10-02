@@ -308,6 +308,8 @@ ul.topslider {
   width: 100%;
   height: 48vh;
   padding: 7vh 0;
+  background-image: url(../img/news.jpg);
+  background-attachment: fixed;
 }
 
 .bgImgBox>img {
@@ -356,10 +358,6 @@ ul.topslider {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-size: 1.2rem;
-}
-#news{
-background-image: url(../img/news.jpg);
-background-attachment: fixed;
 }
 
 #newsBox li:hover {

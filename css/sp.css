@@ -94,6 +94,8 @@ h1{
 #news{
   margin:auto;
   padding:0;
+  background-image: url(../img/newsSP.jpg);
+  /*background-size: cover;*/
 }
 
 .bgImgBox>img {
@@ -163,7 +165,18 @@ footer small{
 /*
       about
                 */
+#teacher {
+  background-image: url(../img/topic/koba04SP.jpg);
+}
+#teacher:hover {
+  background-image: url(../img/topic/koba05SP.jpg);
+}
+
 #teacher>ul>li>ul>li>ul>li:first-child {
+  text-align: center;
+}
+#teacher>ul>li:first-child {
+  width: 65%;
   text-align: center;
 }
 
