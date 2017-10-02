@@ -160,6 +160,8 @@ ul.topslider {
   position: absolute;
   bottom: 3rem;
   right: 0;
+  /* 20171002 トップスライドの文字が読みにくいという声があったので修正しました．不要であれば消してください． */
+  background-color: rgba(255,255,255,0.4);
 }
 
 .topslider .description h3 {
