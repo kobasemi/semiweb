@@ -357,6 +357,10 @@ ul.topslider {
   text-overflow: ellipsis;
   font-size: 1.2rem;
 }
+#news{
+background-image: url(../img/news.jpg);
+background-attachment: fixed;
+}
 
 #newsBox li:hover {
   text-decoration: underline;
@@ -506,11 +510,27 @@ footer small {
 
 #teacher {
   margin: 3vh 0;
+  background-image: url(../img/topic/koba04.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#teacher:hover {
+  background-image: url(../img/topic/koba05.jpg);
+}
+
+#teacher>img{
+  opacity: 0.8;
+  filter: blur(0px);
 }
 
 #teacher>ul {
   text-align: center;
-  margin: 0 0 10vh 0;
+  margin: 0 auto 10vh auto;
+  padding: 1rem;
+  width:80%;
+  background-color: rgba(256,256,256,0.4);
+
 }
 
 #teacher>ul>li {
@@ -518,12 +538,18 @@ footer small {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
+  width: 65%;
+}
+#teacher>ul>li:first-child {
+  width: 25%;
+  text-align: right;
+  padding-right: 2rem;
 }
 
-#teacher>ul>li img {
+/*#teacher>ul>li img {
   height: 60vh;
   max-height: 20em;
-}
+}*/
 
 #teacher>ul>li>ul>li>ul>li {
   /*display: inline-block;*/
