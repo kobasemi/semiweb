@@ -95,6 +95,9 @@ h1{
   margin:auto;
   padding:0;
   background-image: url(../img/newsSP.jpg);
+  background-attachment:local;
+  -webkit-background-size: cover;
+  background-size: cover;
   /*background-size: cover;*/
 }
 
@@ -167,6 +170,8 @@ footer small{
                 */
 #teacher {
   background-image: url(../img/topic/koba04SP.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 #teacher:hover {
   background-image: url(../img/topic/koba05SP.jpg);
