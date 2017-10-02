@@ -56,10 +56,11 @@ h1{
 }
 #spNav ul{
   width: 100%;
+  height: auto;
 }
 #spNav li{
   width:4rem;
-  margin: 2vh calc( 11vw - 5vh );
+  margin: 2vh calc( 13vw - 6vh );
   letter-spacing: 0;
   line-height: 1rem;
 }
@@ -156,7 +157,9 @@ footer small{
 }
 
 
-/*about*/
+/*
+      about
+                */
 #teacher>ul>li>ul>li>ul>li:first-child {
   text-align: center;
 }
@@ -193,4 +196,28 @@ ul#dateList>li>ul>li:first-child {
 }
 ul#dateList>li>ul>li {
   width: 6rem;
+}
+
+
+#memlist li {
+  line-height: 2em;
+  letter-spacing: 0.3em;
+}
+
+#memlist>li {
+  margin: 2em 0;
+}
+
+#memlist>li>ul>li {
+  display: inline-block;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  font-size: 1em;
+}
+
+#memlist>li>ul>li:first-child {
+  width: 6em;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: right;
 }
