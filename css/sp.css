@@ -285,13 +285,21 @@ footer small{
   margin: 3em auto;
 }
 
-
+#dateList{
+  margin: auto;
+}
+ul#dateList>li>ul:first-child>li{
+  font-size: 1em;
+}
 ul#dateList>li>ul>li:first-child {
   width: 8rem;
 }
 ul#dateList>li>ul>li {
   width: 5rem;
   font-size: 0.9rem;
+}
+#numB2{
+  font-size: 1rem;
 }
 
 .office_hourDocSP{
