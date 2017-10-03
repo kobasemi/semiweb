@@ -10,9 +10,7 @@
   -webkit-padding-start: 0px;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-}
+
 
 a {
   text-decoration: none;
@@ -32,13 +30,16 @@ ul {
   list-style: none;
   padding: 0;
 }
-
-h1 {
+h1, h2, h3, h4 {
+  margin: 0;
+}
+h1,h2 {
   margin: 8vh auto 8vh auto;
   text-align: center;
   font-size: 2rem;
   font-family: 'Merriweather', serif;
   letter-spacing: 10px;
+  white-space: nowrap;
 }
 
 /*title-border*/
@@ -525,11 +526,6 @@ footer small {
   background-image: url(../img/topic/koba05.jpg);
 }
 
-#teacher>img {
-  opacity: 0.8;
-  filter: blur(0px);
-}
-
 #teacher>ul {
   text-align: center;
   margin: 0 auto 10vh auto;
@@ -537,7 +533,11 @@ footer small {
   width: 80%;
   background-color: rgba(256, 256, 256, 0.4);
 }
-
+#teacher_name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 #teacher>ul>li {
   margin: 0 auto;
   text-align: center;
@@ -552,31 +552,22 @@ footer small {
   min-width: 8em;
 }
 
-#teacher>ul>li>ul>li>ul {
-  max-width: 75vw;
+#teacher dt{
+  display: inline-block;
+  vertical-align: middle;
+  width: 6em;
+  text-align: right;
 }
-
-#teacher>ul>li>ul>li>ul>li {
-  /*display: inline-block;*/
+#teacher dd {
+  max-width: 75vw;
+  display: inline-block;
   vertical-align: middle;
   margin: 1rem;
   text-align: left;
   width: 17em;
-  display: inline-block;
-  vertical-align: middle;
   max-width: 100%;
 }
 
-#teacher>ul>li>ul>li>ul>li:first-child {
-  width: 6em;
-  text-align: right;
-}
-
-#teacher_name {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
 
 #thema {
   width: 80%;
@@ -651,19 +642,21 @@ footer small {
 
 #dateList {
   text-align: center;
+  margin: 7rem auto;
 }
 
-ul#dateList>li>ul>li {
-  display: inline-block;
-  width: 8rem;
-  line-height: 2em;
-}
-
-ul#dateList>li:first-child {
-  font-size: 1.2em;
-  font-weight: 700;
+ul#dateList>li:first-child>ul>li {
+  font-size: 1.4rem;
   line-height: 3em;
+  font-weight: 700;
 }
+ul#dateList>li>ul>li {
+  font-size: 1.1rem;;
+  line-height: 2.5em;
+  width: 10rem;
+  display: inline-block;
+}
+
 
 .pdfWrap {
   margin: 8vh auto;
