@@ -59,7 +59,8 @@ h1{
 }
 #spNav.fixed{
   position: fixed;
-  top: 0;z-index: 100;
+  top: 0;
+  z-index: 100;
 }
 #spNav ul{
   width: 100%;
@@ -88,7 +89,7 @@ h1{
   font-size: 6vh;
 }
 .navDes{
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-feature-settings: "palt";
 }
 
@@ -176,7 +177,19 @@ footer small{
   height: 20vh;
 }
 
+#topic h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
 
+#topic p {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
 /*
       about
                 */
@@ -184,7 +197,9 @@ footer small{
   background-image: url(../img/topic/koba04SP.jpg);
   -webkit-background-size: cover;
   background-size: cover;
+  background-attachment: scroll;
 }
+
 #teacher:hover {
   background-image: url(../img/topic/koba05SP.jpg);
 }
@@ -262,10 +277,13 @@ footer small{
 }
 
 #messageWrap .message {
+  width: 90%;
+  margin: 3em auto;
+}
+#messageWrap .message p {
   position: static;
   width: 80%;
   margin: 3em auto;
-  transform: translate(0, 0);
 }
 
 
@@ -279,8 +297,20 @@ ul#dateList>li>ul>li {
 
 .office_hourDocSP{
   text-align: center;
+  margin: 3em auto;
 }
 
 .office_hourDocSP a{
   color: #87cefa;
+}
+
+#annual {
+  font-size: 1rem;
+}
+
+#annual>ul>li:first-child {
+  font-size: 1.1em;
+}
+#annual>ul>li>ul>li {
+  width: 33%;
 }

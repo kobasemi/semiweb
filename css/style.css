@@ -165,7 +165,7 @@ ul.topslider {
   /*right: 0;*/
   background-color: rgba(255, 255, 255, 0.4);
   padding: 1rem;
-  max-width: calc( 100% - 4rem );
+  max-width: calc( 100% - 4rem);
 }
 
 .topslider .description h3 {
@@ -281,8 +281,7 @@ ul.topslider {
   width: 100%;
   height: calc( 100% - 1.2rem);
   overflow: hidden;
-  /*white-space: nowrap;*/
-  /*text-overflow: ellipsis;*/
+  line-height: 2rem;
 }
 
 #topicBtn {
@@ -555,6 +554,7 @@ footer small {
 #teacher>ul>li>ul>li>ul {
   max-width: 75vw;
 }
+
 #teacher>ul>li>ul>li>ul>li {
   /*display: inline-block;*/
   vertical-align: middle;
@@ -611,8 +611,7 @@ footer small {
 }
 
 #messageWrap .message {
-  position: static;
-  width: 80%;
+  width: 70%;
   margin: 3em auto;
 }
 
@@ -642,7 +641,8 @@ footer small {
   font-size: 1.3em;
   font-weight: 700;
 }
-#memlist>li>ul>li>ul>li{
+
+#memlist>li>ul>li>ul>li {
   width: 5em;
 }
 
