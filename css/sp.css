@@ -6,6 +6,7 @@
 h1{
     margin: 5vh auto 5vh auto;
     line-height: 1.5em;
+    font-size: 1.8em;
 }
 
 .otherHeader {
@@ -49,23 +50,30 @@ h1{
 
   bottom: 1rem;
   right: 1rem;
-  /*bottom: 2rem;
-  right: 0;*/
 }
 #spNav{
-  height:10vh;
+  height:11vh;
   width:100%;
   margin: auto;
+  background-color: #fff;
+}
+#spNav.fixed{
+  position: fixed;
+  top: 0;z-index: 100;
 }
 #spNav ul{
   width: 100%;
   height: auto;
 }
 #spNav li{
-  width:4rem;
-  margin: 2vh calc( 13vw - 6vh );
+  width:7vh;
+  margin: 2vh auto;
+  margin-right:calc( ( 90vw - 28vh ) / 5 );
   letter-spacing: 0;
   line-height: 1rem;
+}
+#spNav li:first-child{
+  margin-left:calc( ( 90vw - 28vh ) / 5 );
 }
 #spNav li div{
   margin:0  auto;
@@ -80,8 +88,12 @@ h1{
   font-size: 6vh;
 }
 .navDes{
-  font-size: 1.8vw;
+  font-size: 1vw;
   font-feature-settings: "palt";
+}
+
+#topUnder{
+  height:2vh;
 }
 
 
@@ -184,7 +196,51 @@ footer small{
   width: 65%;
   text-align: center;
   padding-right: 0 ;
+  margin-top:1em;
 }
+#teacher_name{
+  line-height: 2em;
+}
+#memlist {
+  margin: 4em auto;
+}
+
+#memlist>li>ul>li:first-child{
+  margin:auto;
+}
+#memlist>li>ul>li{
+  display: block;
+  text-align: center;
+}
+#memlist>li>ul>li>ul>li{
+  display: inline-block;
+  width: 3em;
+  margin: auto 0.5em;
+}
+/*
+#memlist li {
+  line-height: 2em;
+  letter-spacing: 0.3em;
+}
+
+#memlist>li {
+  margin: 2em 0;
+}
+
+#memlist>li>ul>li {
+  display: inline-block;
+  margin: 0 0.5em;
+  vertical-align: middle;
+  font-size: 1em;
+}
+
+#memlist>li>ul>li:first-child {
+  width: 6em;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: right;
+}*/
+
 
 /*
     office hour
@@ -217,28 +273,14 @@ ul#dateList>li>ul>li:first-child {
   width: 8rem;
 }
 ul#dateList>li>ul>li {
-  width: 6rem;
+  width: 5rem;
+  font-size: 0.9rem;
 }
 
-#memlist li {
-  line-height: 2em;
-  letter-spacing: 0.3em;
+.office_hourDocSP{
+  text-align: center;
 }
 
-#memlist>li {
-  margin: 2em 0;
-}
-
-#memlist>li>ul>li {
-  display: inline-block;
-  margin: 0 0.5em;
-  vertical-align: middle;
-  font-size: 1em;
-}
-
-#memlist>li>ul>li:first-child {
-  width: 6em;
-  font-size: 1.3em;
-  font-weight: 500;
-  text-align: right;
+.office_hourDocSP a{
+  color: #87cefa;
 }

@@ -54,9 +54,10 @@ h1 {
   flex-grow: 1;
 }
 
-.noSpacing{
+.noSpacing {
   letter-spacing: 0;
 }
+
 header {
   height: 100vh;
   position: relative;
@@ -66,8 +67,8 @@ header {
   height: 55vh;
 }
 
-.topicHeader{
-  height:20vh;
+.topicHeader {
+  height: 20vh;
 }
 
 .kobasemi {
@@ -162,18 +163,20 @@ ul.topslider {
   bottom: 2rem;
   right: 2rem;
   /*right: 0;*/
-  /* 20171002 トップスライドの文字が読みにくいという声があったので修正しました．不要であれば消してください． */
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   padding: 1rem;
+  max-width: calc( 100% - 4rem );
 }
 
 .topslider .description h3 {
   letter-spacing: 3px;
   width: 18rem;
+  max-width: 100%;
 }
 
 .topslider .description p {
   width: 18rem;
+  max-width: 100%;
 }
 
 #slideli01 {
@@ -433,35 +436,40 @@ footer small {
     topic
               */
 
-.topicWrap{
-  width:90%;
+.topicWrap {
+  width: 90%;
   margin: 0 auto;
   text-align: left;
 }
-.topicDate{
+
+.topicDate {
   margin: 1rem 0;
 }
-.topicWrap h1{
+
+.topicWrap h1 {
   margin: 1rem 0;
   line-height: 1.5em;
 }
-.topicImg{
-  width:90%;
+
+.topicImg {
+  width: 90%;
   margin: 0 auto;
   height: 50vh;
   overflow: hidden;
 }
-.topicImg img{
+
+.topicImg img {
   width: 100%;
   position: relative;
   left: 50%;
-  top:50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.topicWrap p{
-  width:90%;
+
+.topicWrap p {
+  width: 90%;
   margin: 2rem auto;
   display: block;
 }
@@ -513,11 +521,12 @@ footer small {
   background-size: cover;
   background-attachment: fixed;
 }
+
 #teacher:hover {
   background-image: url(../img/topic/koba05.jpg);
 }
 
-#teacher>img{
+#teacher>img {
   opacity: 0.8;
   filter: blur(0px);
 }
@@ -526,9 +535,8 @@ footer small {
   text-align: center;
   margin: 0 auto 10vh auto;
   padding: 1rem;
-  width:80%;
-  background-color: rgba(256,256,256,0.4);
-
+  width: 80%;
+  background-color: rgba(256, 256, 256, 0.4);
 }
 
 #teacher>ul>li {
@@ -537,33 +545,30 @@ footer small {
   display: inline-block;
   vertical-align: middle;
 }
+
 #teacher>ul>li:first-child {
   width: 25%;
   text-align: right;
   padding-right: 2rem;
 }
 
-/*#teacher>ul>li img {
-  height: 60vh;
-  max-height: 20em;
-}*/
-
+#teacher>ul>li>ul>li>ul {
+  max-width: 75vw;
+}
 #teacher>ul>li>ul>li>ul>li {
   /*display: inline-block;*/
   vertical-align: middle;
   margin: 1rem;
   text-align: left;
   width: 17em;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
 }
 
 #teacher>ul>li>ul>li>ul>li:first-child {
   width: 6em;
   text-align: right;
-}
-
-#teacher>ul>li>ul>li>ul>li {
-  display: inline-block;
-  vertical-align: middle;
 }
 
 #teacher_name {
@@ -572,31 +577,32 @@ footer small {
   margin-top: 1rem;
 }
 
-#thema{
+#thema {
   width: 80%;
   margin: 0 auto;
 }
-#thema>ul>li>ul>li{
-font-size: 1.1em;
-line-height: 2em;
+
+#thema>ul>li>ul>li {
+  font-size: 1.1em;
+  line-height: 2em;
 }
-#thema>ul>li>ul>li:first-child{
-margin-top: 0.5em;
-font-size: 1.4em;
-font-weight: 700;
-line-height: 2.4em;
+
+#thema>ul>li>ul>li:first-child {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+  font-weight: 700;
+  line-height: 2.4em;
 }
+
 /*
     office hour
                 */
-
 
 #messageWrap {
   width: 100%;
   padding: 0;
   margin: 8vh auto 8vh auto;
 }
-
 
 #messageWrap>img {
   width: 80%;
@@ -610,48 +616,23 @@ line-height: 2.4em;
   margin: 3em auto;
 }
 
-/*#messageWrap {
-  width: 100%;
-  padding: 7vh 0;
-  position: relative;
-  margin: 8vh auto 20vh auto;
-}
-
-#messageWrap>img {
-  position: relative;
-  opacity: 0.6;
-  z-index: -100;
-  width: 55%;
-  display: block;
-  margin: 0 auto;
-  transform: translate(-20%, 0);
-}
-
-#messageWrap .message {
-  position: absolute;
-  width: 55%;
-  right: 20%;
-  bottom: -2vh;
-  transform: translate(20%, 0);
-}*/
-
 #memlist {
   margin: 10em auto;
-  text-align: center;
 }
 
 #memlist li {
   line-height: 2em;
   letter-spacing: 0.3em;
+  text-align: right;
 }
 
 #memlist>li {
   margin: 2em 0;
+  text-align: center;
 }
 
 #memlist>li>ul>li {
   display: inline-block;
-  margin: 0 1em;
   vertical-align: middle;
   font-size: 1.2em;
 }
@@ -659,8 +640,10 @@ line-height: 2.4em;
 #memlist>li>ul>li:first-child {
   width: 6em;
   font-size: 1.3em;
-  font-weight: 500;
-  text-align: right;
+  font-weight: 700;
+}
+#memlist>li>ul>li>ul>li{
+  width: 5em;
 }
 
 #dateList {
