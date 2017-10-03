@@ -130,8 +130,7 @@ h1{
 }
 
 #newsBox li {
-  line-height: 2rem;
-  height: 2rem;
+  /*line-height: 2rem;*/
   font-size: 1rem;
 }
 

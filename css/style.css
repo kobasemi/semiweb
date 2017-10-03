@@ -353,12 +353,12 @@ ul.topslider {
 }
 
 #newsBox li {
-  line-height: 3.6rem;
-  height: 3.6rem;
-  vertical-align: middle;
+  line-height: 2rem;
+  margin: 1rem auto;
+  /*height: 3.6rem;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;*/
   font-size: 1.2rem;
 }
 
@@ -549,6 +549,7 @@ footer small {
   width: 25%;
   text-align: right;
   padding-right: 2rem;
+  min-width: 8em;
 }
 
 #teacher>ul>li>ul>li>ul {
@@ -582,13 +583,15 @@ footer small {
   margin: 0 auto;
 }
 
-#thema>ul>li>ul>li {
+#thema ul li{
   font-size: 1.1em;
   line-height: 2em;
+  padding-left: 1em;
+  margin-bottom: 1rem;
 }
 
-#thema>ul>li>ul>li:first-child {
-  margin-top: 0.5em;
+#thema dt {
+  margin-top: 1em;
   font-size: 1.4em;
   font-weight: 700;
   line-height: 2.4em;
