@@ -41,6 +41,9 @@ h1,h2 {
   letter-spacing: 10px;
   white-space: nowrap;
 }
+.topic_mainWrap h1 {
+  white-space:normal;
+}
 
 /*title-border*/
 
