@@ -4,7 +4,7 @@
     <ref>topic/topic12.html</ref>
     <img>img/topic/ozaki01.jpg</img>
     <title>コンピュータセキュリティシンポジウム2017で尾崎幸也が発表予定</title>
-    <description></description>
+    <description>山形で開催されるコンピュータセキュリティシンポジウム2017にて，尾崎幸也が悪性URLの強調表示によるDrive-by Download攻撃解析支援手法の提案と称し，Drive-by Download攻撃によって生じた多段のリダイレクト系列を木構造として視覚化し，悪性だと推定されるURLを強調表示することで攻撃の解析支援を行う研究についての発表を行います．</description>
   </topicItem>
   <topicItem>
     <ref>topic/topic11.html</ref>
@@ -28,7 +28,7 @@
     <ref>topic/topic08.html</ref>
     <img>img/topic/B_campus02.jpg</img>
     <title>第12回情報危機管理コンテスト 文部科学大臣賞受賞・高岡奈央さんがJP CERT/CC賞受賞</title>
-    <description></description>
+    <description>第12回情報危機管理コンテストに小林ゼミから「KobaIPS」が出場し，文部科学大臣賞を受賞しました．またリーダーの高岡奈央さんがJPCERT/CC賞を受賞しました．</description>
   </topicItem>
   <topicItem>
     <ref>topic/topic07.html</ref>
