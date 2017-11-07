@@ -316,6 +316,7 @@ ul.topslider {
   padding: 7vh 0;
   background-image: url(../img/news.jpg);
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .bgImgBox>img {
