@@ -615,34 +615,53 @@ footer small {
 
 #memlist {
   margin: 10em auto;
+  width: 95%;
+  text-align: center;
 }
 
-#memlist li {
+
+#memlist section {
+  width: 25rem;
+  margin: 2em 0;
+  text-align: center;
+  display: inline-block;
+}
+#memlist h3{
+    font-size: 1.3rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.memnumlist{
+  width:calc(75% - 5em);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.memnumlist li {
   line-height: 2em;
   letter-spacing: 0.3em;
   text-align: right;
 }
 
-#memlist>li {
-  margin: 2em 0;
-  text-align: center;
+.row{
+  white-space: nowrap;
 }
-
-#memlist>li>ul>li {
+.row li {
   display: inline-block;
   vertical-align: middle;
   font-size: 1.2em;
+  width: 5rem;
+}
+.row li:first-child{
+  width: 2em;
 }
 
-#memlist>li>ul>li:first-child {
-  width: 6em;
-  font-size: 1.3em;
-  font-weight: 700;
+.row:nth-child(3n+1) {
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
-#memlist>li>ul>li>ul>li {
-  width: 5em;
-}
 
 #dateList {
   text-align: center;

@@ -218,42 +218,12 @@ footer small{
 #memlist {
   margin: 4em auto;
 }
-
-#memlist>li>ul>li:first-child{
-  margin:auto;
-}
-#memlist>li>ul>li{
+/* #memlist h3 {
   display: block;
-  text-align: center;
-}
-#memlist>li>ul>li>ul>li{
-  display: inline-block;
-  width: 3em;
-  margin: auto 0.5em;
-}
-/*
-#memlist li {
-  line-height: 2em;
-  letter-spacing: 0.3em;
-}
+  margin:0.5rem auto;
+} */
 
-#memlist>li {
-  margin: 2em 0;
-}
 
-#memlist>li>ul>li {
-  display: inline-block;
-  margin: 0 0.5em;
-  vertical-align: middle;
-  font-size: 1em;
-}
-
-#memlist>li>ul>li:first-child {
-  width: 6em;
-  font-size: 1.3em;
-  font-weight: 500;
-  text-align: right;
-}*/
 
 
 /*
